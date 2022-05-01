@@ -60,6 +60,9 @@ public class DefaultFlagEncoderFactory implements FlagEncoderFactory {
         if (name.equals(WHEELCHAIR))
             return FlagEncoders.createWheelchair(configuration);
 
+        if (name.equals(CHILLBIKE))
+            return FlagEncoders.createChillBike(configuration);
+
         throw new IllegalArgumentException("entry in encoder list not supported: " + name);
     }
 }

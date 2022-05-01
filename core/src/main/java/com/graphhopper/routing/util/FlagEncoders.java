@@ -82,4 +82,8 @@ public class FlagEncoders {
     public static FlagEncoder createRoads() {
         return new RoadsTagParser();
     }
+
+    public static FlagEncoder createChillBike() { return new ChillBikeTagParser(); };
+
+    public static FlagEncoder createChillBike(PMap properties) { return new ChillBikeTagParser(properties); };
 }

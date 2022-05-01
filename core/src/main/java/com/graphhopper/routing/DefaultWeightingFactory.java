@@ -90,6 +90,8 @@ public class DefaultWeightingFactory implements WeightingFactory {
 
         } else if ("short_fastest".equalsIgnoreCase(weightingStr)) {
             weighting = new ShortFastestWeighting(encoder, hints, turnCostProvider);
+        } else if ("chillbike".equalsIgnoreCase(weightingStr)) {
+            weighting = new ChillBikeWeighting(encoder, hints, turnCostProvider);
         }
 
         if (weighting == null)
